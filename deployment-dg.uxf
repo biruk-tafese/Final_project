@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <help_text/>
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>594</x>
+      <y>144</y>
+      <w>192</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Device&gt;&gt;
+ :ClientMachine</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>42</x>
+      <y>138</y>
+      <w>192</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Device&gt;&gt;
+bg=gray
+ :ClientMachine</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>318</x>
+      <y>108</y>
+      <w>198</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Device&gt;&gt;
+
+ :ClientMachine</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>54</x>
+      <y>186</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+User Profile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>54</x>
+      <y>228</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+&lt;&lt;Artifact&gt;&gt;
+ :WebBrowser</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>210</y>
+      <w>102</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ nosql</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>198</y>
+      <w>102</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+HTTP</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>342</x>
+      <y>174</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+Booking subsytem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>342</x>
+      <y>210</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+Transcation subsytem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>342</x>
+      <y>252</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+Search &amp; Navigation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>342</x>
+      <y>294</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+Notification &amp; messaging</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>342</x>
+      <y>330</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+Routing subsystem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>612</x>
+      <y>192</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+User Profile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>612</x>
+      <y>234</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+Booking subsytem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>612</x>
+      <y>276</y>
+      <w>156</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+bg=gray
+&lt;&lt;Artifact&gt;&gt;
+  mongodb database</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>15</x>
+      <y>630</y>
+      <w>185</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   General Manager
+   
+--
+
+ - managerId: String              
+ - name: String                   
+ - password: String               
+      
+--
+
+ 
+ + logIn(): Void               
+ + VerifyRefund(): string
+ + VerifyRoute(): String
+ + VerfityDriver(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>465</y>
+      <w>155</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+
+  UserInterface
+   
+--
+
+
+          
+--
+                    
+ + displayMessage(message: String): Void 
+ + getUserInput(): String                           
+ + showDashboard(): Void                          
+ + showNotifications(): Void 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>15</y>
+      <w>220</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   ReardSystem
+   
+--
+
+ - userId: String                 
+ - rewardPoints: Int              
+        
+--
+
+
+ + checkEligibility(userId: String): Boolean 
+ + issueRewards(userId: String, 
+              transactionId: String): Boolean 
+ + getRewardPoints(userId: String): Int </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>80</y>
+      <w>175</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   Transaction
+   
+--
+
+ - transactionId: String 
+ - amount: Double          
+ - timestamp: Date        
+ - status: String   
+
+          
+--
+
+ + processPayment(amount: Double): Boolean 
+ + getTransactionDetails(): String                    
+ + getTranscationHistory(): String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>275</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   Booking
+   
+--
+
+ - bookingId: String     
+ - passengerId: String 
+ - routeId: String         
+ - seatNumber: Int      
+          
+--
+
+ + + reserveSeat(routeId: String, seatNumber: Int): Boolean 
+ + + cancelBooking(): Boolean                           
+ + + getBookingDetails(): String                       
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>335</x>
+      <y>745</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   Ticket Officer
+   
+--
+
+ - officerId: String                
+ - name: String                     
+ - password: String                 
+
+        
+--
+
+ 
+ + logIn(): Boolean                 
+ + cancelTicket(ticketId: String): Boolean 
+ + handleTicketIssues(ticketId: String): Boolean 
+ + viewTicketHistory(): List&lt;Ticket&gt; 
+ + viewCustomerHistory(customerId: String): List&lt;Ticket&gt; 
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>285</x>
+      <y>295</y>
+      <w>205</w>
+      <h>155</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   OperationLog
+   
+--
+
+ - logId: String                  
+ - userId: String                 
+ - operationType: String          
+ - operationDate: Date            
+ - details: String  
+                     
+--
+
+ 
+ + logOperation(userId: String, operationType:String,
+                    details: String): Boolean 
+ + getLogDetails(logId: String): String </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>0</y>
+      <w>270</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+&lt;&lt;Stereotype&gt;&gt;
+   Passenger
+   
+--
+
+ - passengerId: String            
+ - firstName: String              
+ - lastName: String               
+ - phoneNumber: Int               
+ - email: String                  
+ - password: String               
+      
+--
+
+ 
+ + signUp(signUpDetails: SignUpDetails): Boolean 
+ + logIn(email: String, password: String): Boolean 
+ + updateProfile(updatedDetails: PassengerDetails): Boolean 
+ + changePassword(newPassword: String): Boolean 
+ + resetPassword(email: String): Boolean 
+ + viewHistory(): List&lt;History&gt;   
+ + checkSeatAvailability(routeDetails: Route, travelDate: Date): List&lt;Seat&gt; 
+ + reserveTicket(routeDetails: Route, seatNumber: Int): Ticket 
+ + cancelTicket(ticketId: String): Boolean 
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>380</y>
+      <w>175</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   Operation Manager
+   
+--
+
+ - managerId: String              
+ - name: String                   
+ - password: String               
+        
+--
+
+ 
+ + logIn(): Boolean               
+ + addDriver(driverDetails: Driver): Boolean 
+ + editDriver(driverDetails: Driver): Boolean 
+ + removeDriver(driverId: String): Boolean 
+ + addRoute(routeDetails: Route): Boolean 
+ + editRoute(routeDetails: Route): Boolean 
+ + cancelRoute(routeId: String): Boolean 
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>80</y>
+      <w>80</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>535</x>
+      <y>200</y>
+      <w>235</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>450.0;150.0;450.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>625</y>
+      <w>220</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+bg=blue
+   Route
+   
+--
+
+ - routeId: String      
+ - startLocation: String 
+ - endLocation: String   
+ - distance: Int
+          
+--
+
+ + getRouteDetails(): String                    
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>295</x>
+      <y>115</y>
+      <w>355</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;130.0;280.0;510.0;290.0;510.0;460.0;690.0;460.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>410</y>
+      <w>15</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;430.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>470</y>
+      <w>350</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;350.0;10.0;350.0;130.0;680.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>585</y>
+      <w>165</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;140.0;310.0;140.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>195</x>
+      <y>540</y>
+      <w>325</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;310.0;630.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>195</x>
+      <y>690</y>
+      <w>465</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;40.0;910.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>295</x>
+      <y>30</y>
+      <w>395</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>770.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>395</y>
+      <w>125</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>195</x>
+      <y>445</y>
+      <w>205</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;470.0;200.0;460.0;200.0;240.0;390.0;240.0;380.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>445</y>
+      <w>20</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;600.0;20.0;10.0</additional_attributes>
+  </element>
+</diagram>

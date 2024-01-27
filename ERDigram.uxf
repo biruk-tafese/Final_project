@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>532</x>
+      <y>0</y>
+      <w>98</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Passenger
+
+--
+
+     _Id(PK)
+    firstName
+    lastName
+    phoneNumber
+    email
+    password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>7</y>
+      <w>105</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>
+Ticket Officer
+
+--
+
+     _Id(PK)
+    username
+    email
+    password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>504</y>
+      <w>112</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Operation manager
+
+--
+
+      _Id(PK)
+     username
+      email
+     password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>266</x>
+      <y>252</y>
+      <w>133</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Operation manager
+
+--
+
+        _Id(PK)
+       username
+        emial
+     password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>693</x>
+      <y>7</y>
+      <w>105</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>
+General manager
+
+--
+
+       _Id(PK)
+      username
+       email
+      password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>329</x>
+      <y>504</y>
+      <w>119</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Notification
+
+--
+
+        _Id(PK)
+       User_Id(FK)
+        content
+       sentDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>182</x>
+      <y>0</y>
+      <w>105</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>
+Driver
+
+--
+
+     _Id(PK)
+    username
+    email
+    password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>252</y>
+      <w>126</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+ bus
+
+--
+
+     _Id(PK)
+     platNumber
+     capacity
+     model
+     driver_Id(FK)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>504</y>
+      <w>105</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>
+Transcation
+
+--
+
+     _Id(PK)
+    amount
+    timestamp
+    status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>476</x>
+      <y>259</y>
+      <w>112</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Ticket
+
+--
+
+     _Id(PK)
+    status
+    bookingDate
+    passenger_Id(FK)
+    route_Id(FK)
+    seatNumber</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>525</x>
+      <y>497</y>
+      <w>119</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Operation manager
+
+--
+
+        _Id(PK)
+       username
+        emial
+     password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>259</y>
+      <w>126</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+RefundRequest
+
+--
+
+        _Id(PK)
+       ticket_Id(FK)
+        requestDate
+         status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>504</y>
+      <w>126</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Operation manager
+
+--
+
+        _Id(PK)
+       passenger_Id(FK)
+        reward_type</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
