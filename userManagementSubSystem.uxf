@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>130</x>
+      <y>10</y>
+      <w>780</w>
+      <h>640</h>
+    </coordinates>
+    <panel_attributes>User Profile Subsystem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>70</y>
+      <w>260</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>
+&lt;&lt;Stereotype&gt;&gt;
+ User Registeration
+
+--
+
+
+--
+ + create_account()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>70</y>
+      <w>280</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>
+&lt;&lt;Stereotype&gt;&gt;
+   Personal Information
+   
+--
+    
+--
+
+ - View_profile() 
+ - View_reservation()
+ - modify()
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>360</y>
+      <w>270</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+   User Authentication
+   
+--
+
+        
+--
+
+ 
+ - logIn()                 
+ - Logout()
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>380</y>
+      <w>300</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+
+   Profile Building
+   
+--
+     
+--
+
+ 
+ - reserve_ticket()
+ - review
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
