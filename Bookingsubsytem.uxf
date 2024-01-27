@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>160</y>
+      <w>230</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+   Ticket   
+--
+
+          
+--
+
+ + getTicketDetails()
+ + cancelTicket() 
+ + modify_ticket()
+ + search_route()                     
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>90</x>
+      <y>20</y>
+      <w>910</w>
+      <h>520</h>
+    </coordinates>
+    <panel_attributes>Booking Subsytem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>360</y>
+      <w>230</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>
+   Dashboard   
+--
+
+        
+--
+
+
+ + show_all_reservations() 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>190</y>
+      <w>230</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+   TicketOfficer  
+--
+
+         
+--
+
+ + manage_passenger_info()
+ + send_booking_status() 
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>120</y>
+      <w>230</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>
+   Payment   
+--
+
+        
+--
+
+ + show_payment()
+ + show_payment_status() 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
