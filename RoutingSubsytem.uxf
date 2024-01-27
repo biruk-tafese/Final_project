@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>890</w>
+      <h>640</h>
+    </coordinates>
+    <panel_attributes>Routing management Subsystem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>380</y>
+      <w>180</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>
+   Route
+   
+--
+
+       
+--
+
+ + add_route()
+ + remove_route()                    
+ + modify_route_info()
+ + get_route_details()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>280</y>
+      <w>230</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>
+   Bus
+   
+--
+
+        
+--
+
+ + get_bus_details()
+ + check_capacity()
+ + update_plateNumber()
+ + asign_driver()
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>80</y>
+      <w>200</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>
+   Operation manager
+   
+--
+
+
+          
+--
+
+                  
+ + get_route_retails()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>110</x>
+      <y>280</y>
+      <w>70</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>70</y>
+      <w>230</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>
+   driver
+   
+--
+
+        
+--
+
+ + Add_driver()
+ + modify_driver()
+ + remove_driver()
+
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>390</y>
+      <w>230</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>
+  General manager
+   
+--
+
+        
+--
+
+ + verify_route()
+ + verify_driver()
+ + view_route_info()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

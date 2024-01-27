@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>50</x>
+      <y>110</y>
+      <w>780</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>Operation manager  Subsystem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>190</y>
+      <w>220</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>bg=gray
+&lt;&lt;Stereotype&gt;&gt;
+ OperationManager
+
+--
+
+-operationManagerId: String
+-name: String
+-password: String
+
+--
++ cancelRoute(): Void
++ AddRoutes(): Void
++ AddDrivers(): Void
++ modifyRoute(); void
++ AddDriver(): Void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>240</y>
+      <w>220</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>bg=gray
+&lt;&lt;Stereotype&gt;&gt;
+ ProfileManager
+
+--
+
+--
++ Login(): void
++ Logout(): void
++ ResetPassword(): Void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>310</y>
+      <w>230</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;10.0</additional_attributes>
+  </element>
+</diagram>

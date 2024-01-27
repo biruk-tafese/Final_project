@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>130</x>
+      <y>0</y>
+      <w>780</w>
+      <h>600</h>
+    </coordinates>
+    <panel_attributes>Notification &amp; messaging
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>350</y>
+      <w>230</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+   Notification
+   
+--
+
+--
+
+ + show_notification()
+ + manage_notification()                  
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>80</y>
+      <w>230</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+
+   EmaiIntergration
+   
+--
+
+
+         
+--
+
+ + send_email()
+ + recieve_email()
+                    
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>80</y>
+      <w>230</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+   Alert
+   
+--
+
+--
+
+ + show_update()
+ + show_reservation()                  
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
