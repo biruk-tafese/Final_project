@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>170</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>
+   Refund Request
+   
+--
+
+          
+--
+
+ + apply_refund() 
+ + get_refund_status()                   
+ + cancel_refund()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>170</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>
+   Payment Option
+   
+--
+
+          
+--
+ + paymentMethod()
+ + paymentStatus()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>400</y>
+      <w>230</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>
+   reward
+   
+--
+ - rewardId: string
+ - rewardValue: string
+ 
+          
+--
+
+ + apply_reward()
+ + check_reward_status()
+ + cancel_reward()
+ + update_reward()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>90</y>
+      <w>780</w>
+      <h>550</h>
+    </coordinates>
+    <panel_attributes>Transaction Subsystem</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
